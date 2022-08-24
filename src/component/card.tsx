@@ -5,11 +5,11 @@ export function Card({nom,type}:{nom:string,type:number}){
     return (
         <article className="card">
             {(type===PAPIER)?
-                <img src={"/assets/img/papier.png"} />:
+                <img src={"/assets/img/papier.png"} alt="papier"/>:
             (type===PIERRE)?
-                <img src={"/assets/img/pierre.png"} />:
+                <img src={"/assets/img/pierre.png"} alt="pierre"/>:
             (type===CISEAUX)?
-                <img src={"/assets/img/ciseaux.png"} />:""}
+                <img src={"/assets/img/ciseaux.png"} alt="ciseaux" />:""}
              <h3>{nom}</h3>
              <p>{(type===PAPIER)?
                     "PAPIER":
