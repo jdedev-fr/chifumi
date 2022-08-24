@@ -8,8 +8,8 @@ export function launchBot() {
     return (Math.floor(Math.random() * 3) % 3)
 }
 
-export function monChoix(n:Number){
-    let botC = launchBot()
+export function monChoix(n:Number,botC:number){
+    
     if(botC===PIERRE && n===PAPIER){
         return JWIN
     }else if (botC===PIERRE && n===CISEAUX){
@@ -37,6 +37,6 @@ export function monChoix(n:Number){
         return JWIN
     }
     else {
-        return EGAL
+        return -2
     }
 }

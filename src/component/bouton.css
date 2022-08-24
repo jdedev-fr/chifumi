@@ -1,9 +1,10 @@
 .btn {
     padding: 20px 100px;
-    color: black;
+    color: white;
     background-color: #901C1C;
     display: flex;
     justify-content: space-between;
+    border-radius: 3px;
     min-width: 300px;
     margin: 10px;
 }
